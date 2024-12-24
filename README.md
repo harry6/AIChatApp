@@ -12,4 +12,6 @@ Open source AI chat app demo in swift
 * The second tab allow user to select AI chat API services. Now support ChatGPT and DeepSeek. User can enter API token.
 * Use keychain to save sensitive data such as API key.
 
+![AI Chat App Streaming in Swift](/doc/AIAppSwift_Streaming.mp4 "AI Chat App Streaming in Swift")
+
 ![AI Chat App in Swift](/doc/AIAppSwift.png "AI Chat App in Swift")

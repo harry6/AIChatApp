@@ -7,7 +7,12 @@ struct ContentView: View {
         TabView {
             ChatView(settings: settings)
                 .tabItem {
-                    Label("Chat", systemImage: "message.fill")
+                    Label("Standard", systemImage: "message")
+                }
+            
+            StreamingChatView(settings: settings)
+                .tabItem {
+                    Label("Streaming", systemImage: "message.and.waveform")
                 }
             
             SettingsView(settings: settings)

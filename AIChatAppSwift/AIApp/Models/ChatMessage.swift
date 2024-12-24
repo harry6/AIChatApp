@@ -1,8 +1,8 @@
 import Foundation
 
-struct ChatMessage: Identifiable, Codable {
+struct ChatMessage: Identifiable, Codable, Equatable {
     let id: UUID
-    let content: String
+    var content: String
     let isUser: Bool
     let timestamp: Date
     
@@ -11,5 +11,13 @@ struct ChatMessage: Identifiable, Codable {
         self.content = content
         self.isUser = isUser
         self.timestamp = timestamp
+    }
+    
+    // Implement Equatable
+    static func == (lhs: ChatMessage, rhs: ChatMessage) -> Bool {
+        return lhs.id == rhs.id &&
+               lhs.content == rhs.content &&
+               lhs.isUser == rhs.isUser &&
+               lhs.timestamp == rhs.timestamp
     }
 }

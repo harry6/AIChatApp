@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ACB620862D1956A500C94305 /* AIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620852D1956A500C94305 /* AIAppApp.swift */; };
-		ACB620882D1956A500C94305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620872D1956A500C94305 /* ContentView.swift */; };
 		ACB6208A2D1956A700C94305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB620892D1956A700C94305 /* Assets.xcassets */; };
 		ACB6208D2D1956A700C94305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB6208C2D1956A700C94305 /* Preview Assets.xcassets */; };
 		ACB620972D1956A700C94305 /* AIAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620962D1956A700C94305 /* AIAppTests.swift */; };
@@ -25,6 +24,10 @@
 		ACB620C52D19572700C94305 /* MessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620BA2D19572700C94305 /* MessageStore.swift */; };
 		ACB620C62D19572700C94305 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620BB2D19572700C94305 /* OpenAIService.swift */; };
 		ACB620C92D1A367A00C94305 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620C72D1A367A00C94305 /* KeychainHelper.swift */; };
+		ACB620CC2D1A7D6E00C94305 /* StreamingChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620CA2D1A7D6E00C94305 /* StreamingChatView.swift */; };
+		ACB620CD2D1A7D6E00C94305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620CB2D1A7D6E00C94305 /* ContentView.swift */; };
+		ACB620CF2D1A7D7D00C94305 /* StreamingChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620CE2D1A7D7D00C94305 /* StreamingChatViewModel.swift */; };
+		ACB620D12D1A7D9D00C94305 /* StreamingAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620D02D1A7D9D00C94305 /* StreamingAIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,6 @@
 /* Begin PBXFileReference section */
 		ACB620822D1956A500C94305 /* AIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB620852D1956A500C94305 /* AIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAppApp.swift; sourceTree = "<group>"; };
-		ACB620872D1956A500C94305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACB620892D1956A700C94305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB6208C2D1956A700C94305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACB620922D1956A700C94305 /* AIAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,10 @@
 		ACB620BA2D19572700C94305 /* MessageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageStore.swift; sourceTree = "<group>"; };
 		ACB620BB2D19572700C94305 /* OpenAIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		ACB620C72D1A367A00C94305 /* KeychainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		ACB620CA2D1A7D6E00C94305 /* StreamingChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingChatView.swift; sourceTree = "<group>"; };
+		ACB620CB2D1A7D6E00C94305 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACB620CE2D1A7D7D00C94305 /* StreamingChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingChatViewModel.swift; sourceTree = "<group>"; };
+		ACB620D02D1A7D9D00C94305 /* StreamingAIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingAIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +128,6 @@
 				ACB620B42D19572700C94305 /* ViewModels */,
 				ACB620B22D19572600C94305 /* Views */,
 				ACB620852D1956A500C94305 /* AIAppApp.swift */,
-				ACB620872D1956A500C94305 /* ContentView.swift */,
 				ACB620892D1956A700C94305 /* Assets.xcassets */,
 				ACB6208B2D1956A700C94305 /* Preview Content */,
 			);
@@ -157,6 +162,8 @@
 		ACB620B22D19572600C94305 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ACB620CB2D1A7D6E00C94305 /* ContentView.swift */,
+				ACB620CA2D1A7D6E00C94305 /* StreamingChatView.swift */,
 				ACB620AF2D19572600C94305 /* ChatBubbleView.swift */,
 				ACB620B02D19572600C94305 /* ChatView.swift */,
 				ACB620B12D19572600C94305 /* SettingsView.swift */,
@@ -168,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB620B32D19572700C94305 /* ChatViewModel.swift */,
+				ACB620CE2D1A7D7D00C94305 /* StreamingChatViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -185,9 +193,10 @@
 			isa = PBXGroup;
 			children = (
 				ACB620B82D19572700C94305 /* AIService.swift */,
-				ACB620B92D19572700C94305 /* DeepSeekService.swift */,
 				ACB620BA2D19572700C94305 /* MessageStore.swift */,
 				ACB620BB2D19572700C94305 /* OpenAIService.swift */,
+				ACB620B92D19572700C94305 /* DeepSeekService.swift */,
+				ACB620D02D1A7D9D00C94305 /* StreamingAIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -332,13 +341,16 @@
 			files = (
 				ACB620C12D19572700C94305 /* ChatMessage.swift in Sources */,
 				ACB620C32D19572700C94305 /* AIService.swift in Sources */,
+				ACB620CD2D1A7D6E00C94305 /* ContentView.swift in Sources */,
 				ACB620BF2D19572700C94305 /* SettingsView.swift in Sources */,
 				ACB620C22D19572700C94305 /* Settings.swift in Sources */,
 				ACB620BE2D19572700C94305 /* ChatView.swift in Sources */,
 				ACB620BD2D19572700C94305 /* ChatBubbleView.swift in Sources */,
 				ACB620C52D19572700C94305 /* MessageStore.swift in Sources */,
-				ACB620882D1956A500C94305 /* ContentView.swift in Sources */,
+				ACB620D12D1A7D9D00C94305 /* StreamingAIService.swift in Sources */,
+				ACB620CF2D1A7D7D00C94305 /* StreamingChatViewModel.swift in Sources */,
 				ACB620C92D1A367A00C94305 /* KeychainHelper.swift in Sources */,
+				ACB620CC2D1A7D6E00C94305 /* StreamingChatView.swift in Sources */,
 				ACB620C02D19572700C94305 /* ChatViewModel.swift in Sources */,
 				ACB620862D1956A500C94305 /* AIAppApp.swift in Sources */,
 				ACB620C42D19572700C94305 /* DeepSeekService.swift in Sources */,
