@@ -24,6 +24,7 @@
 		ACB620C42D19572700C94305 /* DeepSeekService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620B92D19572700C94305 /* DeepSeekService.swift */; };
 		ACB620C52D19572700C94305 /* MessageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620BA2D19572700C94305 /* MessageStore.swift */; };
 		ACB620C62D19572700C94305 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620BB2D19572700C94305 /* OpenAIService.swift */; };
+		ACB620C92D1A367A00C94305 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB620C72D1A367A00C94305 /* KeychainHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		ACB620B92D19572700C94305 /* DeepSeekService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepSeekService.swift; sourceTree = "<group>"; };
 		ACB620BA2D19572700C94305 /* MessageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageStore.swift; sourceTree = "<group>"; };
 		ACB620BB2D19572700C94305 /* OpenAIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		ACB620C72D1A367A00C94305 /* KeychainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		ACB620842D1956A500C94305 /* AIApp */ = {
 			isa = PBXGroup;
 			children = (
+				ACB620C82D1A367A00C94305 /* Utilities */,
 				ACB620B72D19572700C94305 /* Models */,
 				ACB620BC2D19572700C94305 /* Services */,
 				ACB620B42D19572700C94305 /* ViewModels */,
@@ -187,6 +190,14 @@
 				ACB620BB2D19572700C94305 /* OpenAIService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		ACB620C82D1A367A00C94305 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ACB620C72D1A367A00C94305 /* KeychainHelper.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +338,7 @@
 				ACB620BD2D19572700C94305 /* ChatBubbleView.swift in Sources */,
 				ACB620C52D19572700C94305 /* MessageStore.swift in Sources */,
 				ACB620882D1956A500C94305 /* ContentView.swift in Sources */,
+				ACB620C92D1A367A00C94305 /* KeychainHelper.swift in Sources */,
 				ACB620C02D19572700C94305 /* ChatViewModel.swift in Sources */,
 				ACB620862D1956A500C94305 /* AIAppApp.swift in Sources */,
 				ACB620C42D19572700C94305 /* DeepSeekService.swift in Sources */,
