@@ -13,8 +13,6 @@ Open source AI chat app demo in swift
 * Use keychain to save sensitive data such as API key.
 
 AI Chat App Streaming in Swift
-<video width="320" controls>
-  <source src="/doc/AIAppSwift_Streaming.mp4" type="video/mp4">
-</video>
+![AI Chat Streaming](/doc/AIAppSwift_Streaming.gif "AI Chat Streaming")
 
 ![AI Chat App in Swift](/doc/AIAppSwift.png "AI Chat App in Swift")
